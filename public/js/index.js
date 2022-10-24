@@ -1,7 +1,7 @@
 // /* eslint-disable */
 import '@babel/polyfill';
 import { displayMap } from './mapbox';
-import { login, logout,signUp } from './login';
+import { login, logout, signUp } from './login';
 import { updateSettings } from './updateSettings';
 import { bookTour } from './stripe';
 import { showAlert } from './alerts';
@@ -42,7 +42,7 @@ if (userDataForm)
     updateSettings(form, 'data');
   });
 
-  if (signUpForm)
+if (signUpForm)
   signUpForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const name = document.getElementById('name').value;
